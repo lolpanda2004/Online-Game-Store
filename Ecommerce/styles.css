@@ -1,0 +1,241 @@
+*{
+    font-family: Comfortaa, cursive;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+html{
+    overflow-x: hidden;
+}
+
+#navbar{
+    position: sticky;
+    box-shadow: 5px 5px 25px rgb(0,0,0);
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    padding: 8px 8px;
+    background: black;
+}
+.navbar .navbar-brand{
+    font-size: 35px;
+    font-weight: 520;
+    color: rgb(189, 141, 215);
+    text-shadow: 0px 1px 0px rgb(189, 141, 215),
+                 0px 2px 0px rgb(199, 177, 210),
+                 0px 3px 0px rgb(199, 177, 210);
+}
+
+#navbarSupportedContent{
+    color:aliceblue;
+    border-bottom: 2px solid transparent;
+    top: 20px;
+}
+
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid rgb(189, 141, 215);
+}
+
+#navbarSupportedContent button{
+    position: relative;
+    left: 280px;
+    width: 100px;
+    background-color: rgb(189, 141, 215);
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    border-radius: 15px;
+    margin-right: 20px;
+    
+}
+
+/**home**/
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home{
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.5)),url(https://pbs.twimg.com/media/Dv7U9zAV4AExHjl.jpg);
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+}
+
+#home h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    letter-spacing: 3px;
+    color:whitesmoke;
+    text-shadow: 0px 1px 0px whitesmoke,
+                0px 2px 0px rgb(189, 141, 215),
+                0px 3px 0px rgb(189, 141, 215),
+                0px 4px 0px rgb(189, 141, 215),
+                0px 5px 0px rgb(189, 141, 215);      
+}
+
+#home p{
+    font-size: 18px;
+    color: whitesmoke;
+}
+ 
+#home .input-group{
+    width:40%;
+    height: 45px;
+}
+
+.signin{
+    background: rgb(189, 141, 215) !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+}
+
+button:hover{
+    box-shadow: 0px 12px 16px 0 rgba(217, 157, 247, 0.892), 0 17px 50px 0 rgba(217, 157, 247, 0.19);
+    color:rgb(250, 242, 225);
+}
+
+/**about**/
+#about{
+    background-image: linear-gradient(to bottom , rgba(154, 93, 149, 0.996), rgb(113, 21, 225));
+}
+
+#about h1{
+    font-family: Comfortaa, cursive;
+    height: 40%;
+    width: 40%;
+    color: whitesmoke;
+    position: absolute;
+    top: 970px;
+    left: 300px;
+}
+
+#about p{
+    font-family: Comfortaa, cursive;
+    font-size: 25px;
+    text-align: justify;
+    line-height: 30px;
+    color: whitesmoke;
+    position: absolute;
+    top: 1070px;
+    line-height: 1.5;
+    left: 80px;
+    right: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    text-justify: auto;
+}
+
+#about img{
+    position: absolute;
+    left: 900px;
+    top: 900px;
+    height: 400px;
+    width: 550px;
+}
+
+/**Releases**/
+#releases{
+    background: linear-gradient(to bottom , rgb(113, 21, 225),rgba(26, 41, 97, 0.996));
+}
+
+#releases h1{
+    color: whitesmoke;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.card{
+    width: 400px;
+    height: 300px;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+                inset 4px 4px 10px white;
+    border-radius: 20px !important;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+}
+
+#releases .btn{
+    background-color: rgb(189, 141, 215);
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+    border: 0px;
+}
+
+#releases .btn:hover, .btn:focus{
+    animation: pulse 1s;
+    box-shadow:  0 0 2em rgb(189, 141, 215);
+}
+
+@keyframes pulse{
+    0% { box-shadow: 0 0 0 0 var(--hover); }
+}
+
+.card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+                inset -4px -4px 10px white;
+    transition: .2s;
+}
+
+/***Contact****/
+#contact{
+    background-image: url(GameSetup.jpeg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-size: cover;
+}
+
+#contact h1{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: whitesmoke;
+}
+.box{
+    width: 80% !important;
+    margin-top: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+#contact input{
+    margin: 10px 0px;
+    justify-content: space-between;
+}
+
+#contact text{
+    margin: 10px 0px;
+}
+
+#contact button{
+    margin: 10px 0px;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+footer{
+    background: rgb(0,0,0);
+    color: rgba(217, 157, 247, 0.892);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+}
