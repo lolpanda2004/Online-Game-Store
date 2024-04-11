@@ -5,7 +5,7 @@ A mini website for game lovers
 - HTML
 - CSS
 - Bootstrap
-- Java Script
+  
 
 
 ## Demo Vid
